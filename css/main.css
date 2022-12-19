@@ -207,7 +207,7 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.logo span {
+.logo__text {
   color: #2196f3;
 }
 
