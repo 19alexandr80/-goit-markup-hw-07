@@ -10,97 +10,95 @@
   </head>
 
   <body>
-    <header class="topline">
-      <div class="topline-content container">
-        <nav class="topline-nav">
+    <header class="topline container">
+        <nav class="topline__navigator">
           <a href="./index.html" class="logo"><span class="logo__text">Web</span>Studio</a>
-          <ul class="topline-nav-ul off-style">
-            <li class="nv-l">
-              <a href="./index.html" class="nav-lnk this">Студія</a>
+          <ul class="navigator-site">
+            <li class="navigator-site__list">
+              <a href="./index.html" class="navigator-site__page this">Студія</a>
             </li>
-            <li class="nv-l">
-              <a href="./portfolio.html" class="nav-lnk">Портфоліо</a>
+            <li class="navigator-site__list">
+              <a href="./portfolio.html" class="navigator-site__page">Портфоліо</a>
             </li>
-            <li class="nv-l"><a href="" class="nav-lnk">Контакти</a></li>
+            <li class="navigator-site__list"><a href="" class="navigator-site__page">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="topline-contakts off-style">
-          <li class="cntkts-l">
-            <a href="mailto:info@devstudio.com" class="contakt-lnk">
-              <svg width="16px" height="12px" class="env">
+        <ul class="topline__contakts">
+          <li class="contakts-list">
+            <a href="mailto:info@devstudio.com" class="contakts-list__link">
+              <svg width="16px" height="12px" class="contakts-list__icon">
                 <use href="./images/symbol-defs.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="cntkts-l">
-            <a href="tel:+380961111111" class="contakt-lnk">
-              <svg width="10px" height="16px" class="env">
+          <li class="contakts-list">
+            <a href="tel:+380961111111" class="contakts-list__link">
+              <svg width="10px" height="16px" class="contakts-list__icon">
                 <use href="./images/symbol-defs.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
-      </div>
     </header>
     <main class="content">
-      <section class="hero section">
+      <section class="hero">
         <div class="container">
-          <h1>
+          <h1 class="hero__header">
             ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br>
             ВАШОГО БІЗНЕСУ
           </h1>
-          <button class="hero-button">Замовити послугу</button>
+          <button class="hero__button">Замовити послугу</button>
         </div>
       </section>
-      <section class="peculiarities section">
-        <div class="peculiarities-body container">
+      <section class="peculiarities">
+        <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
-          <ul class="off-style contents-ul peculiarities-ulist">
-            <li class="peculiarities-list">
-              <div class="peculiarities-svg">
+          <ul class="peculiarities-list">
+            <li class="peculiarities-list__point peculiarities-points">
+              <div class="peculiarities-points__svg">
                 <svg width="70px" height="70px">
-                  <use href="./images/symbol-defs.svg#antenna" width="70px"></use>
+                  <use href="./images/symbol-defs.svg#antenna"></use>
                 </svg>
               </div>
-              <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p>
+              <h3 class="peculiarities-points__header">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="peculiarities-points__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="peculiarities-list">
-              <div class="peculiarities-svg">
+            <li class="peculiarities-list__point peculiarities-points">
+              <div class="peculiarities-points__svg">
                 <svg width="70px" height="70px">
-                  <use href="./images/symbol-defs.svg#clock" width="70px"></use>
+                  <use href="./images/symbol-defs.svg#clock"></use>
                 </svg>
               </div>
-              <h3>ПУНКТУАЛЬНІСТЬ</h3>
-              <p>
+              <h3 class="peculiarities-points__header">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="peculiarities-points__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="peculiarities-list">
-              <div class="peculiarities-svg">
+            <li class="peculiarities-list__point peculiarities-points">
+              <div class="peculiarities-points__svg">
                 <svg width="70px" height="70px">
-                  <use href="./images/symbol-defs.svg#diagram" width="70px"></use>
+                  <use href="./images/symbol-defs.svg#diagram"></use>
                 </svg>
               </div>
-              <h3>ПЛАНУВАННЯ</h3>
-              <p>
+              <h3 class="peculiarities-points__header">ПЛАНУВАННЯ</h3>
+              <p class="peculiarities-points__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="peculiarities-list">
-              <div class="peculiarities-svg">
+            <li class="peculiarities-list__point peculiarities-points">
+              <div class="peculiarities-points__svg">
                 <svg width="70px" height="70px">
-                  <use href="./images/symbol-defs.svg#astronaut" width="70px"></use>
+                  <use href="./images/symbol-defs.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p>
+              <h3 class="peculiarities-points__header">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="peculiarities-points__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -108,25 +106,25 @@
           </ul>
         </div>
       </section>
-      <section class="our_work section">
-        <div class="work-body container">
-          <h2>Чим ми займаємося</h2>
-          <ul class="off-style contents-ul work-ulist">
-            <li class="works-list">
+      <section class="our-work">
+        <div class="container">
+          <h2 class="our-work__header">Чим ми займаємося</h2>
+          <ul class="work-list">
+            <li class="work-list__imege">
               <img
                 src="./images/html_foto.jpg"
                 alt="штмл розмітка"
                 width="370"
               >
             </li>
-            <li class="works-list">
+            <li class="work-list__imege">
               <img
                 src="./images/mobail.jpg"
                 alt="мобільні додатки"
                 width="370"
               >
             </li>
-            <li class="works-list">
+            <li class="work-list__imege">
               <img
                 src="./images/disin.jpg"
                 alt="графічний дізайн"
@@ -136,10 +134,10 @@
           </ul>
         </div>
       </section>
-      <section class="team section">
+      <section class="team">
         <div class="container">
-          <h2>Наша команда</h2>
-          <ul class="off-style contents-ul team-ulist">
+          <h2 class="team__header">Наша команда</h2>
+          <ul class="team-ulist">
             <li class="team-cards">
               <img src="./images/igor_d.jpg" alt="фото Ігора Дем'яненко" width="270" class="teams-foto">
               <div class="team-cont">

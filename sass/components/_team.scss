@@ -1,16 +1,18 @@
 .team {
+    @extend %section;
     background-color: $background-team;
     text-align: center;
-    & h2 {
+    &__header {
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
         margin-top: 0px;
         margin-bottom: 50px;
-      };
+    };
 }
 .team-ulist {
+    @extend %off-style;
     display: flex;
     & p {
         font-size: 16px;
