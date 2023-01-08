@@ -1,4 +1,7 @@
 .our-work {
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
     @extend %section;
     padding-top: 0px;
     &__header {
