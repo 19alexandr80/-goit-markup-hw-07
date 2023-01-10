@@ -2,22 +2,31 @@
   padding-top: 118px;
   padding-bottom: 118px;
   color: $white;
+
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../../images/background-hero/squosh/header-mobail-x-1.jpg);
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../images/background-hero/squosh/header-tablet-x-1.jpg);
+      url(../../images/background-hero/squosh/headertabletx1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../images/background-hero/squosh/header-desktop-x-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
   text-align: center;
   margin: 0 auto;
   max-width: 1600px;
