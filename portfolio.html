@@ -1,76 +1,128 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо</title>
-    
-    
-    <link href="./css/main.min.css" rel="stylesheet" type="text/css">
+
+    <link href="./css/main.min.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     <header class="topline container">
-        <nav class="topline__navigator">
-          <a href="./index.html" class="logo"><span class="logo__text">Web</span>Studio</a>
-          <ul class="navigator-site off-style">
-            <li class="navigator-site__list">
-              <a href="./index.html" class="navigator-site__page">Студія</a>
-            </li>
-            <li class="navigator-site__list">
-              <a href="./portfolio.html" class="navigator-site__page this">Портфоліо</a>
-            </li>
-            <li class="navigator-site__list">
-              <a href="" class="navigator-site__page">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="topline__contakts">
-          <li class="contakts-list">
-            <a href="mailto:info@devstudio.com" class="contakts-list__link">
-              <svg width="16px" height="12px" class="contakts-list__icon">
-                <use href="./images/symbol-defs.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
+      <nav class="topline__navigator">
+        <a href="./index.html" class="logo"
+          ><span class="logo__text">Web</span>Studio</a
+        >
+        <ul class="navigator-site">
+          <li class="navigator-site__list">
+            <a href="./index.html" class="navigator-site__page this">Студія</a>
           </li>
-          <li class="contakts-list">
-            <a href="tel:+380961111111" class="contakts-list__link">
-              <svg width="10px" height="16px" class="contakts-list__icon">
-                <use href="./images/symbol-defs.svg#smartphone"></use>
-              </svg>
+          <li class="navigator-site__list">
+            <a href="./portfolio.html" class="navigator-site__page"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="navigator-site__list">
+            <a href="" class="navigator-site__page">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="topline__contakts">
+        <li class="contakts-list">
+          <a href="mailto:info@devstudio.com" class="contakts-list__link">
+            <svg width="16px" height="12px" class="contakts-list__icon">
+              <use href="./images/symbol-defs.svg#envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="contakts-list">
+          <a href="tel:+380961111111" class="contakts-list__link">
+            <svg width="10px" height="16px" class="contakts-list__icon">
+              <use href="./images/symbol-defs.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+      <svg width="40px" height="40px" class="contakts-list__menu">
+        <use href="./images/symbol-defs.svg#menu"></use>
+      </svg>
+    </header>
+    <div class="head-modal head-modal--close">
+      <div class="header-modal">
+        <ul class="navigator-modal-site">
+          <li class="navigator-modal-site__list">
+            <a href="./index.html" class="navigator-modal-site__page">Студія</a>
+          </li>
+          <li class="navigator-modal-site__list">
+            <a href="./portfolio.html" class="navigator-modal-site__page"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="navigator-modal-site__list">
+            <a href="" class="navigator-modal-site__page">Контакти</a>
+          </li>
+        </ul>
+        <ul class="header-modal__contakts contakts-modal">
+          <li class="contakts-modal__list">
+            <a href="tel:+380961111111" class="contakts-modal__tel">
               +38 096 111 11 11
             </a>
           </li>
+          <li class="contakts-modal__list">
+            <a href="mailto:info@devstudio.com" class="contakts-modal__mail">
+              info@devstudio.com
+            </a>
+          </li>
         </ul>
-    </header>
+        <ul class="social-modal">
+          <li class="social-modal__blok">
+            <a href="" class="social-modal__networks"> Instagram </a>
+          </li>
+          <li class="social-modal__blok">
+            <a href="" class="social-modal__networks"> Twitter </a>
+          </li>
+          <li class="social-modal__blok">
+            <a href="" class="social-modal__networks"> Facebook </a>
+          </li>
+          <li class="social-modal__blok">
+            <a href="" class="social-modal__networks"> Linkedin </a>
+          </li>
+        </ul>
+        <svg width="30px" height="30px" class="header-modal__close">
+          <use href="./images/symbol-defs.svg#close"></use>
+        </svg>
+      </div>
+    </div>
     <main>
       <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
           <div class="filter">
-              <button type="button" class="filter__button">Усі</button>
-              <button type="button" class="filter__button">Веб-сайти</button>
-              <button type="button" class="filter__button">Додатки</button>
-              <button type="button" class="filter__button">Дизайн</button>
-              <button type="button" class="filter__button">Маркетинг</button>
+            <button type="button" class="filter__button">Усі</button>
+            <button type="button" class="filter__button">Веб-сайти</button>
+            <button type="button" class="filter__button">Додатки</button>
+            <br />
+            <button type="button" class="filter__button">Дизайн</button>
+            <button type="button" class="filter__button">Маркетинг</button>
           </div>
           <ul class="portfolio__cards">
             <li class="card-works">
               <a href="" class="card-works__link">
                 <div class="card-works__modal-box">
                   <img
-                  src="./images/portfolio/texnokrjak.jpg"
-                  alt="лоп-топ"
-                  width="370"
-                  >
-                    <p class="card-works__modal-text">
-                      Ресурс пропонує комплексні пропозиції з
-                       різним рівнем функціоналу та сервісів. 
-                      Все це дозволить відвідувачу отримати 
-                      вичерпні відомості про компанію чи приватну особу.
-                    </p>
+                    src="./images/portfolio/texnokrjak.jpg"
+                    alt="лоп-топ"
+                    max-width="100%"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="card-works__content">
                   <h2 class="card-works__title">Технокряк</h2>
@@ -82,19 +134,20 @@
               <a href="" class="card-works__link">
                 <div class="card-works__modal-box">
                   <img
-                  src="./images/portfolio/new-orlean-vs-golden-star.jpg"
-                  alt="постер матчу новий орлєан проти золотої зірки"
-                  width="370"
-                  >
-                    <p class="card-works__modal-text">
-                      Ресурс пропонує комплексні пропозиції з
-                       різним рівнем функціоналу та сервісів. 
-                      Все це дозволить відвідувачу отримати 
-                      вичерпні відомості про компанію чи приватну особу.
-                    </p>
+                    src="./images/portfolio/new-orlean-vs-golden-star.jpg"
+                    alt="постер матчу новий орлєан проти золотої зірки"
+                    width="370"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="card-works__content">
-                  <h2 class="card-works__title">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="card-works__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
                   <p class="card-works__text">Дизайн</p>
                 </div>
               </a>
@@ -103,16 +156,15 @@
               <a href="" class="card-works__link">
                 <div class="card-works__modal-box">
                   <img
-                  src="./images/portfolio/seafood.jpg"
-                  alt="логотип ресторану морскої їжи"
-                  width="370"
-                  >
-                    <p class="card-works__modal-text">
-                    Ресурс пропонує комплексні пропозиції з
-                     різним рівнем функціоналу та сервісів. 
-                    Все це дозволить відвідувачу отримати 
-                    вичерпні відомості про компанію чи приватну особу.
-                    </p>
+                    src="./images/portfolio/seafood.jpg"
+                    alt="логотип ресторану морскої їжи"
+                    width="370"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="card-works__content">
                   <h2 class="card-works__title">Ресторан Seafood</h2>
@@ -124,16 +176,15 @@
               <a href="" class="card-works__link">
                 <div class="card-works__modal-box">
                   <img
-                  src="./images/portfolio/prime.jpg"
-                  alt="навушники"
-                  width="370"
-                  >
-                    <p class="card-works__modal-text">
-                      Ресурс пропонує комплексні пропозиції з
-                       різним рівнем функціоналу та сервісів. 
-                      Все це дозволить відвідувачу отримати 
-                      вичерпні відомості про компанію чи приватну особу.
-                    </p>
+                    src="./images/portfolio/prime.jpg"
+                    alt="навушники"
+                    width="370"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="card-works__content">
                   <h2 class="card-works__title">Проєкт Prime</h2>
@@ -145,16 +196,15 @@
               <a href="" class="card-works__link">
                 <div class="card-works__modal-box">
                   <img
-                  src="./images/portfolio/boxes.jpg"
-                  alt="дві коробочки"
-                  width="370"
-                  >
-                    <p class="card-works__modal-text">
-                    Ресурс пропонує комплексні пропозиції з
-                     різним рівнем функціоналу та сервісів. 
-                    Все це дозволить відвідувачу отримати 
-                    вичерпні відомості про компанію чи приватну особу.
-                    </p>
+                    src="./images/portfolio/boxes.jpg"
+                    alt="дві коробочки"
+                    width="370"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="card-works__content">
                   <h2 class="card-works__title">Проєкт Boxes</h2>
@@ -166,16 +216,15 @@
               <a href="" class="card-works__link">
                 <div class="card-works__modal-box">
                   <img
-                  src="./images/portfolio/inspiration-has-no-borders.jpg"
-                  alt="монітор"
-                  width="370"
-                  >
-                    <p class="card-works__modal-text">
-                      Ресурс пропонує комплексні пропозиції з
-                       різним рівнем функціоналу та сервісів. 
-                      Все це дозволить відвідувачу отримати 
-                      вичерпні відомості про компанію чи приватну особу.
-                    </p>
+                    src="./images/portfolio/inspiration-has-no-borders.jpg"
+                    alt="монітор"
+                    width="370"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="card-works__content">
                   <h2 class="card-works__title">Inspiration has no Borders</h2>
@@ -187,16 +236,15 @@
               <a href="" class="card-works__link">
                 <div class="card-works__modal-box">
                   <img
-                  src="./images/portfolio/limited-edition.jpg"
-                  alt="книжка"
-                  width="370"
-                  >
-                    <p class="card-works__modal-text">
-                      Ресурс пропонує комплексні пропозиції з
-                       різним рівнем функціоналу та сервісів. 
-                      Все це дозволить відвідувачу отримати 
-                      вичерпні відомості про компанію чи приватну особу.
-                    </p>
+                    src="./images/portfolio/limited-edition.jpg"
+                    alt="книжка"
+                    width="370"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="card-works__content">
                   <h2 class="card-works__title">Видання Limited Edition</h2>
@@ -208,16 +256,15 @@
               <a href="" class="card-works__link">
                 <div class="card-works__modal-box">
                   <img
-                  src="./images/portfolio/lab.jpg"
-                  alt="лейба лабораторії"
-                  width="370"
-                  >
-                    <p class="card-works__modal-text">
-                      Ресурс пропонує комплексні пропозиції з
-                       різним рівнем функціоналу та сервісів. 
-                      Все це дозволить відвідувачу отримати 
-                      вичерпні відомості про компанію чи приватну особу.
-                    </p>
+                    src="./images/portfolio/lab.jpg"
+                    alt="лейба лабораторії"
+                    width="370"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="card-works__content">
                   <h2 class="card-works__title">Проєкт LAB</h2>
@@ -229,16 +276,15 @@
               <a href="" class="card-works__link">
                 <div class="card-works__modal-box">
                   <img
-                  src="./images/portfolio/growing-business.jpg"
-                  alt="хтось процює на лоп-топ"
-                  width="370"
-                  >
-                    <p class="card-works__modal-text">
-                      Ресурс пропонує комплексні пропозиції з
-                       різним рівнем функціоналу та сервісів. 
-                      Все це дозволить відвідувачу отримати 
-                      вичерпні відомості про компанію чи приватну особу.
-                    </p>
+                    src="./images/portfolio/growing-business.jpg"
+                    alt="хтось процює на лоп-топ"
+                    width="370"
+                  />
+                  <p class="card-works__modal-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
                 </div>
                 <div class="card-works__content">
                   <h2 class="card-works__title">Growing Business</h2>
@@ -253,12 +299,19 @@
     <footer class="basement">
       <div class="basement-content container">
         <div class="basement-address">
-          <a href="./index.html" class="logo"><span class="logo__text">Web</span>Studio</a>
+          <a href="./index.html" class="logo"
+            ><span class="logo__text">Web</span>Studio</a
+          >
           <address class="basement-address__content">
-            <p class="basement-address__text">м. Київ, пр-т Лесі Українки, 26</p>
+            <p class="basement-address__text">
+              м. Київ, пр-т Лесі Українки, 26
+            </p>
             <ul class="basement-address__list">
               <li class="basement-address__list-item">
-                <a href="mailto:info@devstudio.com" class="basement-address__link">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="basement-address__link"
+                >
                   info@devstudio.com
                 </a>
               </li>
@@ -304,34 +357,54 @@
           </ul>
         </div>
         <div class="mailing basement-content__mailing">
-            <p>ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
-            <form class="mailing__form">
+          <p>ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+          <form class="mailing__form">
             <div class="mailing__group">
               <label>
-                <input type="email" class="mailing__input" name="mailing" placeholder="E-mail">
+                <input
+                  type="email"
+                  class="mailing__input"
+                  name="mailing"
+                  placeholder="E-mail"
+                />
               </label>
               <div class="mailing__button-group">
-                <button class="mailing__button" type="submit">Підписатися</button>
-                  <svg width="24px" height="24px" class="mailing__send-svg">
-                    <use href="./images/symbol-defs.svg#icon-send"></use>
-                  </svg>
+                <button class="mailing__button" type="submit">
+                  Підписатися
+                </button>
+                <svg width="24px" height="24px" class="mailing__send-svg">
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
               </div>
             </div>
-            </form>
+          </form>
         </div>
       </div>
     </footer>
     <script>
       (() => {
-          document
-            .querySelector('.mailing__form')
-            .addEventListener('submit', e => {
-              e.preventDefault();
-              new FormData(e.currentTarget).forEach((value, name) =>
+        document
+          .querySelector(".mailing__form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+            new FormData(e.currentTarget).forEach((value, name) =>
               console.log(`${name}:${value}`)
-              );
-            });
-        })();
+            );
+          });
+      })();
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector(".contakts-list__menu"),
+          closeModalBtn: document.querySelector(".header-modal__close"),
+          modal: document.querySelector(".head-modal"),
+        };
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+
+        function toggleModal() {
+          refs.modal.classList.toggle("head-modal--close");
+        }
+      })();
     </script>
   </body>
 </html>
