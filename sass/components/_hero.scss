@@ -2,7 +2,6 @@
   padding-top: 118px;
   padding-bottom: 118px;
   color: $white;
-
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -28,11 +27,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-
   text-align: center;
   margin: 0 auto;
   max-width: 1600px;
-
   &__header {
     font-weight: 900;
     font-size: 26px;
@@ -40,6 +37,9 @@
     letter-spacing: 0.06em;
     margin-bottom: 30px;
     margin-top: 0px;
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+    }
   }
   &__button {
     @extend %button;
