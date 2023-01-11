@@ -1,21 +1,31 @@
-//.this::after {
-//  content: "";
-//  width: 100%;
-//  height: 4px;
-//  background: $accent-color;
-//  border-radius: 2px;
-//  position: absolute;
-//  left: 0px;
-//  bottom: 0px;
-//  transform: translateY(32px);
-// }
+.this::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: $accent-color;
+  border-radius: 2px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  transform: translateY(32px);
+}
 
 .topline {
   background-color: $white;
   padding-top: 16px;
   padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
   border-bottom: 1px solid $border-color;
   position: relative;
+  display: flex;
+  align-items: center;
+  &__navigator {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .logo {
@@ -25,6 +35,7 @@
 }
 .navigator-site {
   @extend %off-style;
+  display: flex;
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -60,11 +71,11 @@
   fill: currentColor;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
-  justify-content: center;
+  //justify-content: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -77,7 +88,7 @@
 }
 .contakts-list {
   &:not(:last-child) {
-    margin-right: 40px;
+    margin-bottom: 10px;
   }
 }
 .contakts-list__menu {
