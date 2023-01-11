@@ -7,8 +7,16 @@
 .basement-content {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  @media (min-width: 768px) {
+    align-items: flex-start;
+    flex-direction: row;
+    &__join {
+      margin-left: 165px;
+    }
+  }
 }
 .basement-address {
   margin-bottom: 60px;
