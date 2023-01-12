@@ -14,14 +14,18 @@
   background-color: $white;
   padding-top: 16px;
   padding-bottom: 16px;
-  @media screen and (min-width: 768px) {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
   border-bottom: 1px solid $border-color;
   position: relative;
   display: flex;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
   &__navigator {
     display: flex;
     align-items: center;
@@ -45,6 +49,9 @@
   @extend %off-style;
   @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
   }
 }
 .navigator-site__page {
@@ -75,8 +82,11 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
-  //justify-content: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media (min-width: 1200px) {
+    justify-content: center;
+    font-size: 14px;
+  }
   &:hover,
   &:focus {
     color: $accent-color;
@@ -89,6 +99,10 @@
 .contakts-list {
   &:not(:last-child) {
     margin-bottom: 10px;
+    @media (min-width: 1200px) {
+      margin-bottom: 0px;
+      margin-right: 40px;
+    }
   }
 }
 .contakts-list__menu {
