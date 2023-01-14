@@ -394,8 +394,8 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   color: #ffffff;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-hero/squosh/header-mobail-x-1.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-hero/squosh/header-mobail-x-1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-hero/header-mobail-x-1.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-hero/header-mobail-x-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -403,18 +403,36 @@ img {
   margin: 0 auto;
   max-width: 1600px;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-hero/header-mobail-x-2.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-hero/header-mobail-x-2.jpg");
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-hero/squosh/headertabletx1.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-hero/squosh/headertabletx1.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-hero/headertabletx1.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-hero/headertabletx1.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-hero/header-tablet-x-2.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-hero/header-tablet-x-2.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-hero/squosh/header-desktop-x-1.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-hero/squosh/header-desktop-x-1.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-hero/header-desktop-x-1.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-hero/header-desktop-x-1.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background-hero/header-desktop-x-2.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-hero/header-desktop-x-2.jpg");
   }
 }
 .hero__header {
@@ -511,8 +529,27 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-.work-list .work-list__imege:not(:last-child) {
+.work-list__imege:not(:last-child) {
   margin-right: 30px;
+}
+.work-list__imege {
+  position: relative;
+}
+.work-list__title-text {
+  position: absolute;
+  display: block;
+  width: 100%;
+  bottom: 0px;
+  margin: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .team {
@@ -917,7 +954,6 @@ img {
 .modal-window {
   position: absolute;
   min-width: 450px;
-  min-height: 281px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
